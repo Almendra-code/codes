@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://nagoshiashumari.github.io/Rpg-Awesome/stylesheets/rpg-awesome.min.css');
+
+@keyframes mikpulse {
+  0%   { transform: scale(1);  }
+  50%  { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+/* Post de rol Kalipso & Co */
+
+.miktit {
+    font-family: "SN Pro";
+    position: relative;
+    color: #eee;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.miktabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 45px 0 -45px 0;
+}
+
+.miktabs p:hover {
+    background: var(--treat);
+}
+
+.miktabs p:before {
+    content: var(--trick);
+    font-family: RPGAwesome;
+    margin-right: 7px;
+	font-size: 125%;
+}
+
+.miktabs p {
+	color: #eeeeee;
+	transition: 0.7s;
+	display: flex;
+	justify-content: center;
+	margin: 1%;
+	flex-grow: 1;
+	border-radius: 10px;
+	padding: 7px 1%;
+	font-size: 10px;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	border: 1px solid var(--treat);
+}
+
+.mikbody {
+    width: 630px;
+    background: #171717;
+    margin: 15px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 15% 11%;
+    box-sizing: border-box;
+}
+
+.miktext {
+	margin-top: 35px;
+    position: relative;
+    text-align: justify;
+    color: #eee;
+    font-size: 13.4px;
+    letter-spacing: .1px;
+    hyphens: auto;
+}
+
+.miktext strong {
+    color: var(--treat);
+}
+
+mikicon { opacity: 0.2; }
+mikicon:before {
+    content: var(--trick);
+    font-family: RPGAwesome;
+    position: absolute;
+    top: 195px;
+    right: 50px;
+    color: var(--treat);
+    font-size: 300px;
+	animation: mikpulse 4s ease-in-out infinite;
+	rotate: 45deg;
+}
+
+.miktit-underline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+    position: relative;
+    height: 10px;
+}
+
+.miktit-underline::before,
+.miktit-underline::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: var(--treat);
+    width: 40px;
+    transition: width 0.5s ease;
+}
+
+.miktit-underline .cross {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.miktit-underline .cross::before,
+.miktit-underline .cross::after {
+    content: '';
+    position: absolute;
+    background: var(--treat);
+}
+
+.miktit-underline .cross::before {
+    width: 1px;
+    height: 10px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.miktit-underline .cross::after {
+    width: 10px;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.mikbody:hover .miktit-underline::before,
+.mikbody:hover .miktit-underline::after {
+    width: 230px;
+}
+
+.mikrandompick a {
+    text-decoration: none;
+}
+
+.mikrandompick {
+    color: #E3E1DE;
+    font: normal 7px Calibri;
+    font-style: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    width: fit-content;
+    letter-spacing: 2px;
+    opacity: 0.1;
+    display: block;
+    margin: 5px auto;
+}
