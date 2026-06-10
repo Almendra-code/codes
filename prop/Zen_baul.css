@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://almendra-code.github.io/font-icons/icon_file.css");
+:root {
+  --zenfuente: Fredoka;
+  --zenfuentesec: 13px Calibri;
+}
+.center {
+  text-align: center;
+}
+pagina a {
+  text-decoration: none;
+}
+pagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  min-height: 400px;
+  margin: 0 auto;
+  background: #131313;
+  padding: 50px 0;
+  border-radius: 15px;
+}
+.zentitulo {
+  width: 85%;
+  position: relative;
+  padding: 30px 0;
+  color: #eeeeee;
+  font: 40px var(--zenfuente);
+  text-transform: uppercase;
+}
+.zentitulo::first-letter {
+  color: var(--zenpri);
+}
+.zenimg {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  height: 150px;
+}
+.zenintro {
+  width: 600px;
+  position: relative;
+  margin: 10px 0 30px 0;
+  color: #eeeeee;
+  font: var(--zenfuentesec);
+  font-style: italic;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  padding: 0% 8%;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 1s;
+}
+pagina:hover .zenintro {
+  opacity: 1;
+}
+.zenintro::before,
+.zenintro::after {
+  font-family: "Nunito", sans-serif;
+  font-size: 60px;
+  line-height: 15%;
+  color: var(--zenpri);
+  opacity: 0.5;
+  position: absolute;
+}
+.zenintro::before {
+  content: "«";
+  left: 10px;
+}
+.zenintro::after {
+  content: "»";
+  right: 15px;
+}
+.zencrono {
+  position: relative;
+  width: 600px;
+  padding: 1% 4% 0% 25px;
+  box-sizing: border-box;
+  margin: 0 0 30px 24px;
+}
+.zencrono::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -30px;
+  width: 1px;
+  height: calc(100% + 60px);
+  background: var(--zenpri);
+  z-index: 1;
+}
+.zencrono::after {
+  content: "";
+  background: #131313;
+  border: 1px solid var(--zenpri);
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  transition: 1s;
+}
+.zencrono:hover:after {
+  background: var(--zenpri);
+}
+.zencrono:first-child::before {
+  top: 40px;
+}
+.zencrono:last-child::before {
+  top: -70px;
+  height: calc(100% + 30px);
+}
+.zenautor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font: var(--zenfuentesec);
+  font-size: 11px;
+  color: #a4a4a4;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+}
+.zenautor::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid var(--zenpri);
+  margin: auto;
+  margin-left: 5px;
+  opacity: 0.5;
+}
+.zenautor .cp {
+  font-size: 8px;
+  padding-right: 5px;
+}
+.zenresumen {
+  font: var(--zenfuentesec);
+  color: #a4a4a4;
+  hyphens: auto;
+  text-align: justify;
+}
+.zencronotitulo {
+  display: block;
+  color: #eeeeee !important;
+  font: small-caps 20px var(--zenfuente);
+  padding-bottom: 5px;
+}
+.zenrel {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.zenrelavi {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--zenpri);
+  margin-bottom: 30px;
+}
+.zenrelavi img {
+  width: 120px;
+  height: 120px;
+  transition: 1s;
+}
+.zenrel:hover img {
+  width: 150px;
+  height: 150px;
+}
+.zenreldesc {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  height: 145px;
+  padding: 0% 2%;
+  box-sizing: border-box;
+}
+.zenreltitulo {
+  display: block;
+  color: #eeeeee !important;
+  font: small-caps 20px var(--zenfuente);
+  text-align: right;
+  padding-bottom: 2px;
+}
+.zenotros .zenreltitulo {
+  text-align: left;
+}
+.zenrel .zenautor {
+  margin-bottom: 10px;
+  flex-direction: row-reverse;
+}
+.zenotros .zenautor {
+  flex-direction: row;
+}
+.zenrel .zenautor:after {
+  margin: auto 5px auto auto;
+}
+.zenotros .zenautor:after {
+  margin: auto auto auto 5px;
+}
+.zenrel .zenresumen {
+  padding-right: 10px;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.zencredito {
+  width: 700px;
+  font-size: 1px;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0.1;
+}
