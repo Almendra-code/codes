@@ -52,10 +52,10 @@
  .bitpj strong {
      color: var(--colpr);
 }
- .bitpj:nth-child(2n) {
+ .bitpj:nth-of-type(2n) {
      margin-left: 10%;
 }
- .bitpj:nth-child(2n) .bitrol:before {
+ .bitpj:nth-of-type(2n) .bitrol:before {
      content:"\a0";
      position: absolute;
      left: 465px;
@@ -63,10 +63,10 @@
      border-right: 1px dashed #999;
      height: 100%;
 }
- .bitpj:nth-child(2n+1) {
+ .bitpj:nth-of-type(2n+1) {
      margin-right: 10%;
 }
- .bitpj:nth-child(2n+1) .bitrol:before {
+ .bitpj:nth-of-type(2n+1) .bitrol:before {
      content:"\a0";
      position: absolute;
      right: 465px;
@@ -174,7 +174,20 @@
      letter-spacing: 1px;
      font-variant: small-caps;
 }
- #bitfirst:has(.bitpj:nth-child(2n):hover) .bitimg1, #bitfirst:has(.bitpj:nth-child(2n+1):hover) .bitimg2, .bitimg1:hover, .bitimg2:hover {
+ #bitfirst:has(.bitpj:nth-of-type(2n):hover) .bitimg1, #bitfirst:has(.bitpj:nth-of-type(2n+1):hover) .bitimg2, .bitimg1:hover, .bitimg2:hover {
      filter: grayscale(0%);
      transition: 1s;
+}
+
+#bitfirst a {
+	color: #eee;
+	margin: 0 auto;
+	display: block;
+	width: 60%;
+	background: #181818;
+	padding: 2% 10%;
+	text-align: center;
+	font: small-caps 13px Onest;
+	letter-spacing: 1px;
+	border-radius: 5px;
 }
