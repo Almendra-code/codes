@@ -52,10 +52,10 @@
  .bitpj strong {
      color: var(--colpr);
 }
- .bitpj:nth-of-type(2n) {
+ .bitpj:nth-child(2n+1 of .bitpj) {
      margin-left: 10%;
 }
- .bitpj:nth-of-type(2n) .bitrol:before {
+ .bitpj:nth-child(2n+1 of .bitpj) .bitrol::before {
      content:"\a0";
      position: absolute;
      left: 465px;
@@ -63,16 +63,23 @@
      border-right: 1px dashed #999;
      height: 100%;
 }
- .bitpj:nth-of-type(2n+1) {
+ .bitpj:nth-child(2n of .bitpj) {
      margin-right: 10%;
 }
- .bitpj:nth-of-type(2n+1) .bitrol:before {
+ .bitpj:nth-child(2n of .bitpj) .bitrol::before {
      content:"\a0";
      position: absolute;
      right: 465px;
      top: 0px;
      border-right: 1px dashed #999;
      height: 100%;
+}
+  narrador > .bitpj.aislado {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+  narrador > .bitpj.aislado .bitrol::before {
+    display: none;
 }
  .bitpj:hover {
      border: 1px solid var(--colpr);
