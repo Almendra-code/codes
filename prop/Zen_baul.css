@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Huninn&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://almendra-code.github.io/font-icons/icon_file.css");
 :root {
   --zenfuente: Fredoka;
@@ -16,7 +16,7 @@ pagina {
   align-items: center;
   width: 700px;
   min-height: 400px;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   background: #131313;
   padding: 50px 0;
   border-radius: 15px;
