@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Huninn&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://almendra-code.github.io/font-icons/icon_file.css");
 :root {
-  --zenfuente: Fredoka;
+  --zenfuente: Huninn;
   --zenfuentesec: 13px Calibri;
 }
 .center {
